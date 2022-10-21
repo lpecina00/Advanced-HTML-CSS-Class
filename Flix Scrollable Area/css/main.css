@@ -1,0 +1,114 @@
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; border: 0; }
+audio, canvas, iframe, img, svg, video { vertical-align: middle; } /* Remove gaps between elements */
+nav ul, nav ol { list-style-type: none; padding: 0; margin: 0; } /* Remove bullets from lists in nav */
+textarea { resize: vertical; }
+.clearfix:after { content: ""; display: table; clear: both; }
+
+
+/* ==========================================================================
+   PROJECT STYLES
+   ========================================================================== */
+
+body {
+	font-family: Montserrat, sans-serif;
+	color: #fff;
+	background-color: #0b2036;
+	background-image: radial-gradient(circle, #215A96, #000);
+	background-attachment: fixed;
+}
+a {
+	color: #fb8100;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #feb279;
+}
+input {
+	color: black;
+}
+header {
+	background-color: #0A1D32;
+	background-image: url(../img/header-bg.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	border-bottom: 1px solid rgba(255,255,255, .2);
+	padding: 0 15px;
+	background-size: auto 100%;
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25),
+	          (min-resolution: 1.25dppx),
+	          (min-resolution: 120dpi) {
+	header {
+		background-image: url(../img/header-bg@2x.png);
+	}
+}
+header h1 {
+	margin: 0;
+}
+header .logo {
+	width: 100px;
+	float: left;
+	margin: 9px 0;
+}
+input[type="search"] {
+	font-size: 1rem;
+	float: right;
+	border: 0;
+	padding: .4em 1em;
+	margin-top: 25px;
+	width: 150px;
+	outline: 0;
+	border-radius: 20px;
+	line-height: normal;
+}
+::placeholder {
+	color: #2ba0ee;
+	font-weight: 700;
+	line-height: normal;
+	opacity: 1;
+}
+.movies {
+	background-color: #fff;
+	padding: 15px;
+	margin: 0;
+}
+.movies li {
+	width: 99px;
+	margin-right: 11px;
+}
+nav img {
+	width: 33px;
+	margin-right: 15px;
+}
+nav li {
+	border-bottom: 1px solid rgba(255,255,255, .2);
+}
+nav li:hover, nav li:active {
+	background: rgba(255,255,255, .05);
+}
+nav a {
+	color: #fff;
+	line-height: 70px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 15px;
+	display: block;
+}
+nav a::before {
+	content: '>';
+	float: right;
+	margin-right: 5px;
+	color: rgba(255,255,255, .6);
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+/* High Resolution Styles */
+@media print, (-webkit-min-device-pixel-ratio: 1.25),
+	          (min-resolution: 1.25dppx),
+	          (min-resolution: 120dpi) {
+	/* Styles for high resolution devices go here */
+}

@@ -1,0 +1,47 @@
+body {
+    background-color: #555;
+    margin: 30px;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+h2 {
+    background: #2fb3fe;
+    color: #fff;
+    padding: 15px;
+    margin-top: 0;
+}
+
+section p {
+    margin: 15px; 
+}
+
+header, section {
+    border: 4px solid #2fb3fe;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    max-width: 800px;
+
+}
+
+header {
+    background-image: url(../img/masthead-darkened.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background-size: cover: fits img in one dimension, 
+  so that you can see the full width OR height (but not 
+  both), and without distorting the img. This means
+  unless the img is exactly the proportions of its box,
+  the img must be cropped. */
+    color: #fff;
+    text-align: center;
+   }
+
+   footer {
+    color: #ccc;
+    text-align: center;
+   }
+   
